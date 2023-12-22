@@ -1,0 +1,11 @@
+.auth-banner {
+    background-color: #133157;
+    padding: 12px;
+}
+
+.signup-container {
+    background-color: whitesmoke;
+    width: 350px;
+    padding: 12px;
+    margin: 10px auto 0 10px;
+}
