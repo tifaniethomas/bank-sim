@@ -1,6 +1,7 @@
 .auth-banner {
     background-color: #133157;
     padding: 12px;
+    text-align: right;
 }
 
 .signup-container {
