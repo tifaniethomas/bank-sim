@@ -1,6 +1,23 @@
 .login-container {
     background-color: whitesmoke;
-    width: 350px;
+    width: 300px;
     padding: 12px;
-    margin: 10px auto 0 10px;
+    margin: 10px 10px 0 auto;
+}
+
+.login-container form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+}
+
+.login-container label {
+    font-size: 12px;
+    grid-column: 1;
+    margin-bottom: 5px;
+  }
+
+.login-container input {
+    grid-column: 2;
+    padding: 7px
 }
