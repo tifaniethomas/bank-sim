@@ -21,3 +21,23 @@
     grid-column: 2;
     padding: 7px
 }
+
+.auth-banner {
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+    align-items: center;
+}
+
+.auth-banner img {
+    width: 300px;
+    height: auto;
+    margin-left: 55px;
+}
+
+.banner-text {
+    margin: 0 40px;
+    text-align: left;
+    color: white;
+    width: 50%;
+}

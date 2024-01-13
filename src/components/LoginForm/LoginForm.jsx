@@ -32,6 +32,7 @@ export default function LoginForm({ setUser }) {
   return (
     <div className="auth-banner">
       <img src={Pig} alt="Piggy bank with coin half inserted." />
+        <p className='banner-text'>Open a savings account today to start putting away for a rainy day!</p>
       <div className="login-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label><p>Email</p></label>
