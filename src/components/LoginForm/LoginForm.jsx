@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Pig from '../../images/little-pig.png'
 import * as usersService from '../../utilities/users-service';
 import '../LoginForm/LoginForm.css'
 
@@ -30,13 +31,14 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div className="auth-banner">
+      <img src={Pig} alt="Piggy bank with coin half inserted." />
       <div className="login-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label><p>Email</p></label>
           <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
           <label><p>Password</p></label>
           <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-          <button type="submit">LOG IN</button>
+          <button type="submit">Sign in</button>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>
