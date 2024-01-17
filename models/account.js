@@ -3,7 +3,9 @@ const Schema = mongoose.Schema
 
 
 const accountSchema = new Schema ({
-    name: {type: String, required: true}
+    user: {type: Schema.Types.ObjectId, ref: "User", required: true},
+    balance: {type: Number, default: 0,},
+    transactions: [{type: Schema.Types.ObjectId, ref: "Transaction"}]
 }, {timestamps: true})
 
 
