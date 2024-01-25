@@ -3,7 +3,7 @@ export default function Footer() {
     
     return (
         <div>
-            <h3>Footer Here</h3>
+            <h4>© 2024 Tifanie Thomas. All rights reserved.</h4>
         </div>
     )
 }
