@@ -38,35 +38,36 @@ export default class SignUpForm extends Component {
 
         return(
             <div className="auth-banner">
-            <div className="signup-container">
-              <form autoComplete="off" onSubmit={this.handleSubmit}>
-                <label>
-                    <p>
-                        Name &nbsp; 
-                    </p>
-                </label>
-                    <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
-                <label>
-                    <p>
-                        Email &nbsp; 
-                    </p>
-                </label>
-                    <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-                <label>
-                    <p>
-                        Password &nbsp; 
-                    </p>
-                </label>
-                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-                <label>
-                    <p>
-                        Confirm &nbsp; 
-                    </p>
-                </label>
-                    <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
-                <button type="submit" disabled={disable}>SIGN UP</button>
-              </form>
-            </div>
+                <p className='banner-text'>**Before signing up, please check with your volunteer to see if you already have an account**</p>
+                <div className="signup-container">
+                <form autoComplete="off" onSubmit={this.handleSubmit}>
+                    <label>
+                        <p>
+                            Name &nbsp; 
+                        </p>
+                    </label>
+                        <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+                    <label>
+                        <p>
+                            Email &nbsp; 
+                        </p>
+                    </label>
+                        <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+                    <label>
+                        <p>
+                            Password &nbsp; 
+                        </p>
+                    </label>
+                        <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+                    <label>
+                        <p>
+                            Confirm &nbsp; 
+                        </p>
+                    </label>
+                        <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+                    <button type="submit" disabled={disable}>SIGN UP</button>
+                </form>
+                </div>
             <p className="error-message">&nbsp;{this.state.error}</p>
           </div>
         )
