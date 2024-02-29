@@ -10,7 +10,8 @@ import HomePage from '../HomePage/HomePage';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
-  
+  const [balance, setBalance] = useState([])
+
   return (
     <main className="App">
       
@@ -18,8 +19,8 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/transactions/new" element={ <NewTransactionPage /> }/>
-            <Route path="/transactions" element={ <OrderHistoryPage /> }/>
+            <Route path="/transactions/new" element={ <NewTransactionPage balance={balance} setBalance={setBalance} /> }/>
+            <Route path="/transactions" element={ <OrderHistoryPage balance={balance} /> }/>
           </Routes>
           <HomePage />
         </>
