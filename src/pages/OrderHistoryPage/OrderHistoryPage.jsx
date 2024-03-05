@@ -1,6 +1,6 @@
 import { checkToken } from "../../utilities/users-api"
 
-export default function OrderHistoryPage() {
+export default function OrderHistoryPage({ balance }) {
     async function handleCheckToken(evt) {
         const expDate = await checkToken()
         console.log(expDate)
