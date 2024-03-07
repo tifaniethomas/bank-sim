@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function NewTransactionPage({ balance, setBalance }) {
-    const [newBalance, setBewBalance] = useState(0)
+    const [newBalance, setNewBalance] = useState(0)
 
     function handleClick(evt) {
         evt.preventDefault()
