@@ -1,3 +1,4 @@
+import Balance from "../../components/Balance/Balance"
 import { useState } from "react"
 
 export default function NewTransactionPage({ balance, setBalance }) {
@@ -8,5 +9,10 @@ export default function NewTransactionPage({ balance, setBalance }) {
         console.log(evt.target.value)
         setNewBalance(evt.target.value)
     }
-    return (<h1>NewTransactionPage</h1>)
+    return (
+        <>
+            <h1>New Transaction</h1>
+            <Balance />
+        </>
+    )
 }
