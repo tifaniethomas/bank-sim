@@ -12,7 +12,7 @@ export default function NewTransactionPage({ balance, setBalance }) {
     return (
         <>
             <h1>New Transaction</h1>
-            <Balance />
+            <Balance balance={balance} />
         </>
     )
 }
