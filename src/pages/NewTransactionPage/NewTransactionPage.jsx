@@ -1,4 +1,5 @@
 import Balance from "../../components/Balance/Balance"
+import TransactionForm from "../../components/TransactionForm/TransactionForm"
 import { useState } from "react"
 
 export default function NewTransactionPage({ balance, setBalance }) {
