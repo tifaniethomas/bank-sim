@@ -4,7 +4,7 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NewTransactionPage from '../NewTransactionPage/NewTransactionPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
+import TransactionHistoryPage from '../TrasactionHistoryPage/OrderHistoryPage'
 import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
 
@@ -20,7 +20,7 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/transactions/new" element={ <NewTransactionPage balance={balance} setBalance={setBalance} /> }/>
-            <Route path="/transactions" element={ <OrderHistoryPage balance={balance} /> }/>
+            <Route path="/transactions" element={ <TransactionHistoryPage balance={balance} /> }/>
           </Routes>
           <HomePage />
         </>
