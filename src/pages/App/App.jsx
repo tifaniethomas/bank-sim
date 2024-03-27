@@ -4,7 +4,7 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NewTransactionPage from '../NewTransactionPage/NewTransactionPage';
-import TransactionHistoryPage from '../TrasactionHistoryPage/OrderHistoryPage'
+import TransactionHistoryPage from '../TrasactionHistoryPage/TransactionHistoryPage'
 import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
 
