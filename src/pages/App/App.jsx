@@ -10,7 +10,7 @@ import HomePage from '../HomePage/HomePage';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
-  const [balance, setBalance] = useState([])
+  const [balance, setBalance] = useState(0)
 
   return (
     <main className="App">
