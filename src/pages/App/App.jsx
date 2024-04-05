@@ -19,8 +19,8 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/transactions/new" element={ <NewTransactionPage balance={balance} setBalance={setBalance} /> }/>
-            <Route path="/transactions" element={ <TransactionHistoryPage balance={balance} /> }/>
+            <Route path="/transactions/new" element={ <NewTransactionPage balance={ balance } setBalance={ setBalance } /> }/>
+            <Route path="/transactions" element={ <TransactionHistoryPage balance={ balance } /> }/>
           </Routes>
           <HomePage />
         </>

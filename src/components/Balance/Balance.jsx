@@ -1,9 +1,9 @@
-export default function Balance(balance={balance}) {
+export default function Balance({ balance }) {
 
     
     return (
         <>
-            <p>Balance: </p>
+            <p>Balance: ${ balance }</p>
         </>
     )
 }
