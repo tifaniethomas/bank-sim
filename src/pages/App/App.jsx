@@ -22,7 +22,6 @@ export default function App() {
             <Route path="/transactions/new" element={ <NewTransactionPage balance={ balance } setBalance={ setBalance } /> }/>
             <Route path="/transactions" element={ <TransactionHistoryPage balance={ balance } /> }/>
           </Routes>
-          <HomePage />
         </>
         :
         <AuthPage setUser={setUser} />

@@ -11,10 +11,11 @@ export default function NewTransactionPage({ balance, setBalance }) {
         setNewBalance(evt.target.value)
     }
     return (
-        <>
+        <section className="transaction">
             <h1>New Transaction</h1>
             <Balance balance={ balance } />
+
             <TransactionForm newBalance={ newBalance } setNewBalance={ setNewBalance } />
-        </>
+        </section>
     )
 }
